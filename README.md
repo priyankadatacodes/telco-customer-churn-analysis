@@ -103,8 +103,4 @@ This project successfully demonstrates how data analytics can translate into tan
 - **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation  
 ---
 
-
-
----
-
 **Author:** [Priyanka Lakra]  
