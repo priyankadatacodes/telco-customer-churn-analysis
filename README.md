@@ -20,13 +20,13 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 
 ## **Dataset Summary**
 
-The data consists of 7,043 customer records with 21 features, stored in a local MySQL database.
-Target Variable: Churn (Yes/No)
-Data Split: 73.4% Retained, 26.6% Churned.
+- The data consists of 7,043 customer records with 21 features, stored in a local MySQL database.
+- Target Variable: Churn (Yes/No)
+- Data Split: 73.4% Retained, 26.6% Churned.
 **Key Features**:
-Demographics: Gender, SeniorCitizen, Partner, Dependents.
-Services: Phone, MultipleLines, Internet (DSL/Fiber), Security, Backup.
-Account Info: Tenure, Contract, PaymentMethod, MonthlyCharges.
+- Demographics: Gender, SeniorCitizen, Partner, Dependents.
+- Services: Phone, MultipleLines, Internet (DSL/Fiber), Security, Backup.
+- Account Info: Tenure, Contract, PaymentMethod, MonthlyCharges.
 
 ---
 
