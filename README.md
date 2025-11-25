@@ -4,9 +4,7 @@
 
 ## **Project Overview**
 
-This project demonstrates an end-to-end solution—right from raw data warehousing,data cleaning, analytics, machine learning modeling, and dashboard creation. 
-
-The goal is to reveal actionable insights for reducing customer churn in the telecom sector, and to prove my skills across SQL, Python, and Power BI.
+This project focuses on identifying risk factors associated with customer churn in the telecommunications industry. By leveraging MySQL for data management and Python for predictive modeling, we analyzed customer behavior to build a machine learning solution that flags high-risk users. The project further extends into a Power BI dashboard for real-time monitoring and quantifies the financial impact of retention strategies.
 
 ---
 
@@ -17,6 +15,18 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 - What factors drive customer churn most?
 - Which customers are at highest risk?
 - How can the business focus its retention efforts for maximum ROI?
+
+---
+
+## **Dataset Summary**
+
+The data consists of 7,043 customer records with 21 features, stored in a local MySQL database.
+Target Variable: Churn (Yes/No)
+Data Split: 73.4% Retained, 26.6% Churned.
+**Key Features**:
+Demographics: Gender, SeniorCitizen, Partner, Dependents.
+Services: Phone, MultipleLines, Internet (DSL/Fiber), Security, Backup.
+Account Info: Tenure, Contract, PaymentMethod, MonthlyCharges.
 
 ---
 
@@ -79,6 +89,12 @@ Estimated **monthly revenue saved:** ₹20 lakhs+.
 
 ---
 
+## **Conclusion**
+
+This project successfully demonstrates how data analytics can translate into tangible business value. By moving from reactive analysis to predictive modeling, the company can reduce its churn rate from ~26% down towards the industry average, saving millions in annual revenue while improving customer satisfaction.
+
+---
+
 ## **Tools & Technologies Used**
 
 - **SQL / MySQL:** Data storage and retrieval  
@@ -86,4 +102,9 @@ Estimated **monthly revenue saved:** ₹20 lakhs+.
 - **Power BI:** Business dashboarding and interactive visualization  
 - **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation  
 ---
+
+
+
+---
+
 **Author:** [Priyanka Lakra]  
