@@ -1,6 +1,5 @@
 # **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
 *(SQL → Python → Power BI)*
-**Author:** [Priyanka Lakra]  
 ---
 
 ## **Project Overview**
@@ -88,3 +87,4 @@ Estimated **monthly revenue saved:** ₹20 lakhs+.
 - **Power BI:** Business dashboarding and interactive visualization  
 - **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation  
 ---
+**Author:** [Priyanka Lakra]  
