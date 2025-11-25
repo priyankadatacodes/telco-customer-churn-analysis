@@ -45,7 +45,6 @@ Customer churn is a critical and costly problem in subscription businesses. Here
     - Model prediction visualization and high-value customer lists
 
 > **5. Reporting & Delivery:**  
-  - Produced a professional PDF business report (see repo)  
   - Documented all steps and business logic in this README for clarity and review
 
 ---
