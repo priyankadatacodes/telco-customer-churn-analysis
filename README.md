@@ -1,5 +1,4 @@
 #  **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
-## *(SQL → Python → Power BI)*
 ![SQL](https://img.shields.io/badge/SQL-MySQL-orange) →![Python](https://img.shields.io/badge/Python-3.10%2B-blue)→![Power BI](https://img.shields.io/badge/BI-Power%20BI-yellow)
 
 ---
