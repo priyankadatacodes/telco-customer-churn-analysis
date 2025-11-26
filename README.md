@@ -1,5 +1,13 @@
 # **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
 *(SQL → Python → Power BI)*
+
+
+
+
+
+
+
+
 ---
 
 ## **Project Overview**
