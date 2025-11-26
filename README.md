@@ -1,12 +1,5 @@
 # **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
-*(SQL → Python → Power BI)*
-
-
-
-
-
-
-
+## *(SQL → Python → Power BI)*
 
 ---
 
@@ -67,6 +60,14 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 
 ---
 
+## **Tools & Technologies Used**
+
+- **SQL / MySQL:** Data storage and retrieval  
+- **Python:** Data extraction, cleaning, EDA, feature engineering, modeling (Pandas, NumPy, Scikit-learn)  
+- **Power BI:** Business dashboarding and interactive visualization  
+- **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation
+
+---
 ## **Key Outcomes of the Analysis**
 
 - **Churn Rate:** 26.58%
@@ -158,14 +159,6 @@ Customers with low tenure and high bills are at the highest risk of churning.
 
 This project successfully demonstrates how data analytics can translate into tangible business value. By moving from reactive analysis to predictive modeling, the company can reduce its churn rate from ~26% down towards the industry average, saving millions in annual revenue while improving customer satisfaction.
 
----
-
-## **Tools & Technologies Used**
-
-- **SQL / MySQL:** Data storage and retrieval  
-- **Python:** Data extraction, cleaning, EDA, feature engineering, modeling (Pandas, NumPy, Scikit-learn)  
-- **Power BI:** Business dashboarding and interactive visualization  
-- **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation  
 ---
 
 **Author:** [Priyanka Lakra]  
