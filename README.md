@@ -1,4 +1,4 @@
-# **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
+#  **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
 ## *(SQL → Python → Power BI)*
 
 ---
@@ -31,7 +31,7 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 
 ---
 
-## **Data Engineering & Workflow**
+## **Approach**
 
 > **1. Data Ingestion:**  
   - Downloaded raw customer churn dataset from Kaggle  
