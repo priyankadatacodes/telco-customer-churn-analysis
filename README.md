@@ -34,6 +34,8 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 
 ## **Approach**
 
+![Telecom Churn Analysis Worklflow](https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/blob/main/churn_workflow.png)
+
 > **1. Data Ingestion:**  
   - Downloaded raw customer churn dataset from Kaggle  
   - Created relational table in **MySQL** (well-defined schema with correct data types)
