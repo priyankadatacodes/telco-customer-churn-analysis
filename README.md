@@ -30,6 +30,8 @@ Customer churn is a critical and costly problem in subscription businesses. Here
 - Services: Phone, MultipleLines, Internet (DSL/Fiber), Security, Backup.
 - Account Info: Tenure, Contract, PaymentMethod, MonthlyCharges.
 
+  <img src="https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/main/dashboard/telecom_churn_analysis_dashboard.png" width="100%">
+  
 ---
 
 ## **Approach**
