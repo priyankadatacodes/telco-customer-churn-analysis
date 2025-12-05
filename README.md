@@ -166,4 +166,11 @@ This project successfully demonstrates how data analytics can translate into tan
 
 ---
 
+## How to Run
+1. Clone repo
+2. Install requirements: `pip install -r requirements.txt`
+3. Run notebook: `churn_analysis.ipynb`
+4. Open dashboard in Power BI
+---
+
 **Author:** [Priyanka Lakra]  
