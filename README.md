@@ -1,176 +1,211 @@
-#  **TELECOM CUSTOMER CHURN ANALYSIS – END TO END PROJECT
-![SQL](https://img.shields.io/badge/SQL-MySQL-orange) →![Python](https://img.shields.io/badge/Python-3.10%2B-blue)→![Power BI](https://img.shields.io/badge/BI-Power%20BI-yellow)
+# **Telecom Customer Churn Analysis – End-to-End Project**
+![SQL](https://img.shields.io/badge/SQL-MySQL-orange)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Power BI](https://img.shields.io/badge/BI-Power%20BI-yellow)
 
 ---
+
 <img src="https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/main/telecom_churn_analysis.png" width="100%">
 
-## **Project Overview**
+---
 
-This project focuses on identifying risk factors associated with customer churn in the telecommunications industry. By leveraging MySQL for data management and Python for predictive modeling, we analyzed customer behavior to build a machine learning solution that flags high-risk users. The project further extends into a Power BI dashboard for real-time monitoring and quantifies the financial impact of retention strategies.
+## **Executive Summary**
+
+This project analyzes **customer churn in the telecommunications industry** to identify **high-risk customers**, understand **key churn drivers**, and support **data-driven retention strategies**.
+
+The company is experiencing a **churn rate of ~26.6%**, which poses a serious risk to long-term revenue.  
+Using **SQL for data management**, **Python for analysis and predictive modeling**, and **Power BI for reporting**, this project identifies churn patterns and highlights customers most likely to leave.
+
+The outcome enables the business to **prioritize retention efforts**, reduce churn, and protect customer lifetime value.
+
+---
+
+## **Why I Built This Project**
+
+Customer churn is one of the most expensive problems in subscription-based businesses.  
+Acquiring new customers costs significantly more than retaining existing ones.
+
+I built this project to:
+- Understand **why customers leave**
+- Identify **early churn signals**
+- Practice combining **descriptive + predictive analytics**
+- Translate model outputs into **business actions**
+
+This mirrors a real-world data analyst role where insights must support **revenue and retention decisions**.
+
+---
+
+## **Business Context**
+
+Telecom companies operate on:
+- Monthly subscription revenue
+- Long-term customer relationships
+- High competition and low switching costs
+
+A high churn rate means:
+- Loss of predictable revenue
+- Increased acquisition spend
+- Reduced customer lifetime value (CLV)
+
+The business needs to know **who is likely to churn and why**, so interventions can happen **before customers leave**.
 
 ---
 
 ## **Problem Statement**
 
-Customer churn is a critical and costly problem in subscription businesses. Here, the telco company faces a **churn rate above 26%**—putting future revenue at risk.  
-**Key Questions:**
-- What factors drive customer churn most?
-- Which customers are at highest risk?
-- How can the business focus its retention efforts for maximum ROI?
+Analyze telecom customer data to:
+- Measure and understand **customer churn**
+- Identify **key churn drivers**
+- Predict **high-risk customers**
+- Support **targeted retention strategies** with maximum ROI
 
 ---
 
-## **Dataset Summary**
+## **Hypotheses**
 
-- The data consists of 7,043 customer records with 21 features, stored in a local MySQL database.
-- Target Variable: Churn (Yes/No)
-- Data Split: 73.4% Retained, 26.6% Churned.
-**Key Features**:
-- Demographics: Gender, SeniorCitizen, Partner, Dependents.
-- Services: Phone, MultipleLines, Internet (DSL/Fiber), Security, Backup.
-- Account Info: Tenure, Contract, PaymentMethod, MonthlyCharges.
+Before analysis, the following hypotheses were framed:
 
-  <img src="https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/main/dashboard/telecom_churn_analysis_dashboard.png" width="100%">
-  
+- **H1:** Customers with low tenure are more likely to churn  
+- **H2:** Higher monthly charges increase churn risk  
+- **H3:** Flexible (month-to-month) contracts lead to higher churn  
+- **H4:** Billing preferences and service usage impact churn behavior  
+
+These hypotheses guided both exploratory analysis and modeling.
+
 ---
 
-## **Approach**
+## **Dataset Overview**
+
+- **Total Records:** **7,043 customers**
+- **Target Variable:** **Churn (Yes / No)**
+- **Churn Distribution:**
+  - **73.42% Retained**
+  - **26.58% Churned**
+
+**Key Feature Groups:**
+- **Demographics:** Gender, SeniorCitizen, Partner, Dependents  
+- **Services:** Phone, MultipleLines, Internet, Security, Backup  
+- **Account Info:** Tenure, Contract, Payment Method, Monthly Charges  
+
+<img src="https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/main/dashboard/telecom_churn_analysis_dashboard.png" width="100%">
+
+---
+
+## **End-to-End Approach**
 
 <img src="https://raw.githubusercontent.com/priyankadatacodes/telco-customer-churn-analysis/main/churn_workflow.png" width="100%">
 
-> **1. Data Ingestion:**  
-  - Downloaded raw customer churn dataset from Kaggle  
-  - Created relational table in **MySQL** (well-defined schema with correct data types)
-  - Imported data to MySQL for storage, retrieval, and data integrity
+### **1. Data Ingestion (MySQL)**
+- Imported raw churn dataset from Kaggle  
+- Designed relational schema with correct data types  
+- Stored data in **MySQL** for integrity and querying  
 
-> **2. Data Extraction & Cleaning (Python):**  
-  - Used **Python (Pandas + SQLAlchemy)** to fetch data directly from the MySQL database  
-  - Performed exploratory data analysis (EDA), cleaned missing values, corrected data types  
-  - Feature engineering: tenure groups, categoricals, numeric conversions  
-  - Saved the cleaned, analysis-ready dataset for next steps
+### **2. Data Extraction & Cleaning (Python)**
+- Extracted data using **Pandas + SQLAlchemy**  
+- Performed EDA and handled missing values  
+- Corrected data types and engineered features  
+- Created tenure groups and numeric conversions  
 
-> **3. Analysis & Modeling:**  
-  - Conducted descriptive analytics, churn drivers analysis, group statistics  
-  - Built predictive models (Logistic Regression, Random Forest) to classify high-risk customers  
-  - Evaluated model performance, calculated churn probabilities
+### **3. Analysis & Modeling**
+- Performed descriptive churn analysis  
+- Identified churn drivers using group statistics  
+- Built **Logistic Regression** and **Random Forest** models  
+- Generated churn probabilities for each customer  
 
-> **4. Business Dashboarding (Power BI):**  
-  - Imported cleaned dataset to Power BI  
-  - Created interactive dashboards:  
-    - Churn summary, key KPIs, feature drilldowns, filterable segments
-    - Model prediction visualization and high-value customer lists
+### **4. Business Dashboarding (Power BI)**
+- Built interactive dashboards including:
+  - Churn KPIs
+  - Customer segmentation
+  - High-risk customer identification
+  - Feature-level drilldowns  
 
-> **5. Reporting & Delivery:**  
-  - Documented all steps and business logic in this README for clarity and review
+### **5. Reporting & Documentation**
+- Documented business logic, assumptions, and insights in this README  
 
 ---
 
 ## **Tools & Technologies Used**
 
 - **SQL / MySQL:** Data storage and retrieval  
-- **Python:** Data extraction, cleaning, EDA, feature engineering, modeling (Pandas, NumPy, Scikit-learn)  
-- **Power BI:** Business dashboarding and interactive visualization  
-- **Jupyter Notebook / IPython:** Code, documentation, and workflow presentation
-
----
-## **Key Outcomes of the Analysis**
-
-- **Churn Rate:** 26.58%
-- **Retained Customers:** 73.42%
-- **High-Risk Customers Identified:** 6.33%
-- **Top Churn Drivers:** Low tenure, high monthly charges, digital billing
-
-These results help identify areas where the company can apply targeted retention efforts.
+- **Python:** Pandas, NumPy, Scikit-learn (EDA + modeling)  
+- **Power BI:** Interactive dashboards and KPIs  
+- **Jupyter Notebook:** Analysis and documentation  
 
 ---
 
-## **Insights Summary**
+## **Key Outcomes**
 
-### 1. Overall Customer Situation
-
-The company is experiencing a 26.58% churn rate, which means one in every four customers is leaving. While 73.42% of customers are retained, even a small reduction in churn could make a significant difference in revenue and customer satisfaction.
-
-### 2. Customer Demographics
-
-- The gender ratio is balanced, with no strong churn bias by gender.
-- Only 16% of customers are senior citizens; this is not a major segment for churn.
-- Customers who have partners or dependents are slightly more stable and less likely to churn.
-
-### 3. Tenure: Main Indicator of Churn
-
-- Median tenure for retained customers is 38 months.
-- Median tenure for churned customers is just 10 months.
-- This shows that new customers (under one year) are much more likely to leave, which may highlight issues with onboarding or initial experience.
-
-### 4. Billing and Service Behavior
-
-- 90% of customers use phone service, so this feature does not strongly influence churn.
-- Paperless billing is linked to stronger churn, possibly due to dissatisfaction with digital billing or unclear charges.
-- Median monthly charges are ₹64.5 for retained and ₹79.7 for churned customers, suggesting customers paying higher bills may feel less value for money.
-
-### 5. Revenue Impact
-
-- Retained customers have a median total lifetime charge of ₹1683.6.
-- Churned customers only contribute a median of ₹703.5 before leaving, which shows the business is losing customers early and reducing lifetime value.
-
-### 6. Top Churn Drivers
-
-| Feature           | Correlation with Churn |
-|-------------------|----------------------|
-| Churn Probability | 0.557                |
-| Tenure            | 0.354                |
-| TotalCharges      | 0.199                |
-| MonthlyCharges    | 0.193                |
-| PaperlessBilling  | 0.191                |
-
-Customers with low tenure and high bills are at the highest risk of churning.
-
-### 7. Model-Based Churn Risk
-
-- Average predicted churn probability is 0.27
-- High-risk group (churn probability above 0.7) is 6.33% of all customers
-- This group should be the main focus for retention campaigns
+- **Churn Rate:** **26.58%**
+- **Retained Customers:** **73.42%**
+- **High-Risk Customers Identified:** **6.33%**
+- **Top Churn Drivers:** Low tenure, high monthly charges, digital billing  
 
 ---
 
-## Practical Recommendations
+## **Key Insights**
 
-1. **Improve Onboarding for New Customers:**  
-   Since newer customers are more likely to churn, a more structured onboarding process and early customer support may help increase retention.
+### **Customer Tenure**
+- Median tenure (retained): **38 months**
+- Median tenure (churned): **10 months**
+- New customers are significantly more likely to churn  
 
-2. **Address High Billing Concerns:**  
-   Customers with higher monthly charges leave more frequently. Review billing policies, consider targeted discounts, or bundle offers for those paying more.
+### **Billing & Pricing**
+- Median monthly charges:
+  - **Retained:** ₹64.5
+  - **Churned:** ₹79.7
+- Higher bills increase churn likelihood  
 
-3. **Clarify or Enhance Digital Billing:**  
-   Paperless billing is associated with higher churn. Make digital statements clearer or offer optional paper statements to increase transparency.
+### **Revenue Impact**
+- Median lifetime charges:
+  - **Retained:** ₹1683.6
+  - **Churned:** ₹703.5
+- Early churn severely reduces lifetime value  
 
-4. **Focus Retention on High-Risk Segment:**  
-   Use model predictions to identify and proactively engage the 6% of customers with the highest churn risk, through personalized offers or support.
-
-5. **Encourage Long-term Contracts:**  
-   Since flexible, month-to-month plans are linked to higher churn, incentivize annual or longer contracts where appropriate.
-
-6. **Offer Basic Tech Support:**  
-   Providing complimentary support packages can help reduce attrition, especially for new or high-value customers.
-
-7. **Monitor Customer Lifetime Value:**  
-   Make efforts to increase the LTV of at-risk customers, especially in the first year.
-
-*All recommendations are based on the findings from the data analysis. As a fresher, I focused on actionable insights that can be realistically implemented by a telecom business and demonstrated my understanding of analytics-driven decision making.*
-
----
-
-## **Conclusion**
-
-This project successfully demonstrates how data analytics can translate into tangible business value. By moving from reactive analysis to predictive modeling, the company can reduce its churn rate from ~26% down towards the industry average, saving millions in annual revenue while improving customer satisfaction.
+### **Model-Based Risk**
+- Average churn probability: **0.27**
+- **6.33%** of customers have churn probability > **0.7**
+- This segment should be the **top priority** for retention  
 
 ---
 
-## How to Run
-1. Clone repo
-2. Install requirements: `pip install -r requirements.txt`
-3. Run notebook: `churn_analysis.ipynb`
-4. Open dashboard in Power BI
+## **Business Impact**
+
+- Enables proactive churn prevention  
+- Supports targeted retention instead of mass campaigns  
+- Protects customer lifetime value  
+- Reduces revenue leakage from early churn  
+
 ---
 
-**Author:** [Priyanka Lakra]  
+## **Practical Recommendations**
+
+1. **Improve onboarding for new customers** to reduce early churn  
+2. **Review pricing and billing transparency** for high-charge users  
+3. **Enhance digital billing clarity** to reduce dissatisfaction  
+4. **Focus retention offers on the top 6% high-risk customers**  
+5. **Encourage longer-term contracts** with incentives  
+6. **Offer basic technical support bundles** for new customers  
+7. **Track customer lifetime value (CLV)** alongside churn  
+
+---
+
+## **Final Takeaway**
+
+Customer churn in telecom is driven primarily by **early-stage dissatisfaction, pricing pressure, and contract flexibility**.  
+By combining **data analysis and predictive modeling**, the business can move from reactive churn management to **proactive customer retention**, improving both revenue stability and customer satisfaction.
+
+---
+
+## **How to Run**
+
+1. Clone the repository  
+2. Install dependencies: `pip install -r requirements.txt`  
+3. Run the notebook: `churn_analysis.ipynb`  
+4. Open the Power BI dashboard  
+
+---
+
+## **Author**
+
+**Priyanka Lakra**  
+**Aspiring Data Analyst | SQL | Python | Power BI**
